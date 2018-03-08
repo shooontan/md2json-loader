@@ -4,7 +4,7 @@
   "description": "webpack loader. this loader convert from markdown with yaml form to json.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "precommit": "lint"
   },
@@ -24,13 +24,16 @@
     "json"
   ],
   "devDependencies": {
+    "ava": "^0.25.0",
     "eslint": "^4.18.2",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "prettier": "^1.11.1"
+    "markdown-it-emoji": "^1.4.0",
+    "prettier": "^1.11.1",
+    "webpack": "^4.1.1"
   },
   "repository": {
     "type": "git",

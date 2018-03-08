@@ -1,2 +1,8 @@
 # dependencies
 node_modules
+
+# yarn
+yarn-error.log
+
+# test
+/test/output
