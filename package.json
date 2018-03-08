@@ -1,0 +1,43 @@
+{
+  "name": "md2json-loader",
+  "version": "0.0.1",
+  "description": "webpack loader. this loader convert from markdown with yaml form to json.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "precommit": "lint"
+  },
+  "author": "shooontan",
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "loader-utils": "^1.1.0",
+    "markdown-it": "^8.4.1",
+    "yaml-front-matter": "^4.0.0-4"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "markdown-it",
+    "yaml",
+    "json"
+  ],
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shooontan/md2json-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shooontan/md2json-loader/issues"
+  },
+  "homepage": "https://github.com/shooontan/md2json-loader#readme"
+}
