@@ -1,6 +1,6 @@
 {
   "name": "md2json-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webpack loader. this loader convert from markdown with yaml form to json.",
   "main": "src/index.js",
   "scripts": {
