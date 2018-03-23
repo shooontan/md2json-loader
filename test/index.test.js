@@ -13,7 +13,7 @@ test.cb(t => {
             test: /\.md$/,
             use: [
               {
-                loader: require.resolve('../index.js'),
+                loader: require.resolve('../src/index.js'),
                 options: {
                   breaks: true,
                   linkify: false,

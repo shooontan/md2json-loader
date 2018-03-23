@@ -6,7 +6,7 @@ const hljs = require('highlight.js');
 module.exports = function(source) {
   this.cacheable();
 
-  const options = loaderUtils.getOptions(this);
+  const options = loaderUtils.getOptions(this) || {};
 
   if (options.highlight) {
     options.highlight = function(str, lang) {
@@ -26,10 +26,6 @@ module.exports = function(source) {
     };
   }
 
-  const obj = yaml.safeLoadFront(source, {
-    contentKeyName: 'body'
-  });
-
   md.set(options);
 
   if (options.plugs && options.plugs.length > 0) {
@@ -44,7 +40,11 @@ module.exports = function(source) {
     });
   }
 
+  const obj = yaml.safeLoadFront(source, {
+    contentKeyName: 'body'
+  });
+
   obj.bodyHtml = md.render(obj.body);
 
-  return 'module.exports = ' + JSON.stringify(obj);
+  return `module.exports = ${JSON.stringify(obj)}`;
 };

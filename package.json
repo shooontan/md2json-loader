@@ -2,7 +2,7 @@
   "name": "md2json-loader",
   "version": "0.0.1",
   "description": "webpack loader. this loader convert from markdown with yaml form to json.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "ava",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
